@@ -1,59 +1,168 @@
-<!-- index.html (Homepage) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HotGoddess.com - Fashion for Women</title>
+    <title>HotGoddess</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Additional styles for the homepage */
-        .category {
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fcefee; /* Light pink background */
+            color: #3a3a3a; /* Dark gray text */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #d96c8c; /* Darker pink header background */
+            padding: 10px;
             text-align: center;
-            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header a {
+            color: #fff; /* White header text */
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        main {
             padding: 20px;
-            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        #categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .category {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 15px;
+            background-color: #404040; /* Dark grey category background */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .category img {
+            max-width: 200px; /* Adjusted max-width for all category images */
+            max-height: 200px; /* Adjusted max-height for all category images */
+            border-radius: 8px;
+        }
+
+        .category h3 {
+            margin-top: 10px;
+            color: #fff; /* White category title */
+        }
+
+        .category a {
+            color: #3a3a3a; /* Dark gray link text */
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        #options {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .option {
+            border: 1px solid #ddd; /* Light gray border */
+            border-radius: 10px;
+            padding: 15px;
+            background-color: #f5f5f5; /* Smooth, clean, and visible mix between grey and white */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .option a {
+            color: #3a3a3a; /* Dark gray link text */
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #404040; /* Dark grey footer background */
+            padding: 5px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #fff; /* White footer text */
         }
     </style>
 </head>
 <body>
-
     <header>
-        <h1>HotGoddess.com</h1>
+        <div class="logo">
+            <a href="#home">HotGoddess.com</a>
+        </div>
+        <div class="header-options">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#checkout">Checkout</a>
+            <a href="#account">Account</a>
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="clothing.html">Clothing</a></li>
-            <li><a href="makeup.html">Makeup</a></li>
-            <li><a href="jewelry.html">Jewelry</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <section class="category">
-            <h2>Clothing</h2>
-            <!-- Include content related to clothing -->
-            <p>Explore our trendy collection of clothing for women.</p>
+        <section id="categories">
+            <h2>Categories</h2>
+            <div class="category-group">
+                <div class="category">
+                    <img src="C:\Users\KAFUMAN ELECTRONICS\Desktop\SITE ONE\images\clothes.webp" alt="Clothes Image">
+                    <h3>Clothes</h3>
+                    <a href="clothes.html">Shop Now</a>
+                </div>
+                <div class="category">
+                    <img src="C:\Users\KAFUMAN ELECTRONICS\Desktop\SITE ONE\images\shoesdisplay.jpg" alt="Shoes Image">
+                    <h3>Shoes</h3>
+                    <a href="shoes.html">Shop Now</a>
+                </div>
+                <div class="category">
+                    <img src="C:\Users\KAFUMAN ELECTRONICS\Desktop\SITE ONE\images\accdisplay.jpg" alt="Accessories Image">
+                    <h3>Accessories</h3>
+                    <a href="accessories.html">Shop Now</a>
+                </div>
+                <div class="category">
+                    <img src="C:\Users\KAFUMAN ELECTRONICS\Desktop\SITE ONE\images\jewelry.jpg" alt="Jewelry Image" style="max-width: 200px; max-height: 200px;">
+                    <h3>Jewelry</h3>
+                    <a href="jewelry.html">Shop Now</a>
+                </div>
+            </div>
         </section>
 
-        <section class="category">
-            <h2>Makeup</h2>
-            <!-- Include content related to makeup -->
-            <p>Discover the latest makeup products to enhance your beauty.</p>
-        </section>
-
-        <section class="category">
-            <h2>Jewelry</h2>
-            <!-- Include content related to jewelry -->
-            <p>Adorn yourself with our stunning jewelry pieces.</p>
+        <section id="options">
+            <div class="option">
+                <h2>Products</h2>
+                <a href="products.html">View Products</a>
+            </div>
+            <div class="option">
+                <h2>Checkout</h2>
+                <a href="checkout.html">Go to Checkout</a>
+            </div>
+            <div class="option">
+                <h2>Account Dashboard</h2>
+                <a href="account.html">Visit Account Dashboard</a>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 HotGoddess.com</p>
+        &copy; 2023 HotGoddess.com
     </footer>
-
 </body>
 </html>
